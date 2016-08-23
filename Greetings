@@ -1,0 +1,16 @@
+// The Greeting class declaration
+public class Greeting {
+	private String salutation;
+	
+	Greeting(String s){
+		salutation =s;
+	}
+
+	public void greet(String whom){
+		if (! (salutation.equals("Hi") || salutation.equals("Hello"))) {
+			System.out.println("You can not say that!");
+		}else{
+			System.out.println(salutation + " " + whom);
+		}
+	}
+}
